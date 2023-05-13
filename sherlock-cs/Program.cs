@@ -33,6 +33,8 @@ internal class Program
 
         Console.WriteLine($"Checking username{(args.Usernames.Length > 1 ? "s" : "")} {string.Join(", ", args.Usernames)}");
 
+        var start = DateTime.Now;
+
         await Parallel.ForEachAsync(args.Usernames, new ParallelOptions { MaxDegreeOfParallelism = Math.Min(Math.Max(Environment.ProcessorCount - 1, 1), int.MaxValue) }, async (username, _) =>
         {
             var tasks = new List<Task>();
@@ -45,6 +47,10 @@ internal class Program
             }
             await Task.WhenAll(tasks);
         });
+
+        Console.WriteLine();
+
+        Console.WriteLine($"[!!] Search completed within {(DateTime.Now - start).TotalSeconds:0.00}s");
     }
 
     static async Task HandleQuery(string module, string username, SherlockEntry network)
