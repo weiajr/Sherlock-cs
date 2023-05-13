@@ -4,7 +4,7 @@
     <br><br><br>
 </p>
 
-> Sherlock-cs is a reimagination of Sherlock that incorporates both concurrency and threading, enabling it to operate up to 400% faster. This program is compatible with the Sherlock format and automatically downloads the latest version from the Sherlock repository. Additionally, Sherlock-cs is licensed under AGPL-V3.
+> Sherlock-cs is a reimagination of Sherlock that incorporates both concurrency and threading, enabling it to operate up to 250% faster. This program is compatible with the Sherlock format and automatically downloads the latest version from the Sherlock repository. Additionally, Sherlock-cs is licensed under AGPL-V3.
 
 <br>
 
@@ -12,6 +12,28 @@
     <img width="70%" height="70%" src="https://github.com/weiajr/Sherlock-cs/blob/master/images/speed.png"/>
 </p>
 
+## Benchmark
+```console
+time ./sherlock-cs hackerman1337 --timeout 5
+........
+[!!] Search completed within 6.74s
+
+real    0m7.080s
+user    0m2.004s
+sys     0m0.327s
+
+
+time python3 sherlock hackerman1337 --timeout 5
+........
+[*] Search completed with 43 results
+
+real    0m18.060s
+user    0m5.885s
+sys     0m0.478s
+
+````
+
+<br>
 
 ## Usage
 ```console
@@ -67,3 +89,9 @@ To search for more than one user:
 ```
 ./sherlock-cs user1 user2 user3
 ```
+
+<br>
+
+## License
+
+Sherlock-cs is licensed under the AGPL-V3 License. See [LICENSE](https://github.com/weiajr/Sherlock-cs/blob/master/LICENSE) for more information.
