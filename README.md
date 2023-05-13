@@ -1,7 +1,7 @@
 <p align=center>
     <br>
     <span>Hunt down social media accounts by username across <a href="https://github.com/sherlock-project/sherlock/blob/master/sites.md">social networks</a></span>
-    ###### Sherlock-cs is a reimagination of Sherlock that incorporates both concurrency and threading, enabling it to operate up to 400% faster. This program is compatible with the Sherlock format and automatically downloads the latest version from the Sherlock repository. Additionally, Sherlock-cs is licensed under AGPL-V3.
+    <span>Sherlock-cs is a reimagination of Sherlock that incorporates both concurrency and threading, enabling it to operate up to 400% faster. This program is compatible with the Sherlock format and automatically downloads the latest version from the Sherlock repository. Additionally, Sherlock-cs is licensed under AGPL-V3.</span>
     <br>
 </p>
 
